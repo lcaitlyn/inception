@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway+Dots&display=swap');
+
+body {
+	background-color: #e7d5bb;
+}
+
+.calc {
+	margin: 50px auto;
+	width: 260px;
+	height: 400px;
+	border: 1px solid #1de0dd;
+	border-radius: 20px; 
+	background: #1de0dd;
+	color: #3d3d3d;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 18px;
+	box-shadow: 4px 4px 4px #bd9cba;
+}
+
+.calc-screen {
+	height: 30px;
+	padding: 5px;
+	margin-bottom: 20px;
+	display: grid;
+	justify-items: end;
+	align-items: end;
+} 
+
+.calc-screen p {
+	text-align:center;
+	font-size: 2rem;
+	margin: 0 auto;
+	color: #ffff;	
+} 
+
+.buttons {
+	display: grid;
+	grid-template-areas: "zero zero zero C";
+	grid-gap: 6px;
+	justify-items: center;
+}
+
+.btn {
+	width: 60px;
+	height: 60px;
+	background: #ffff;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 60px;
+	font-size: 1.5rem;
+	cursor: pointer;
+	user-select: none;
+	box-shadow: 2px 2px 2px #159894;
+}
+
+.btn.zero {
+	grid-area:zero;
+	color: #adadad;
+	width: 100%;
+	text-align:left; 
+	font-size: 1rem;
+	border-radius: 10px;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+.btn.C {
+	color:#ffff
+}
+
+.btn:hover{
+	filter: brightness(95%);
+}
+
+.btn:active{
+	filter: brightness(85%);
+}
+
+.btn.bg-red{
+	background: #f04f77;
+}
